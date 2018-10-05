@@ -43,11 +43,11 @@ public class TokenService {
             return jwt.getClaim("userId").asString();
         } catch (UnsupportedEncodingException exception) {
             exception.printStackTrace();
-            //log WRONG Encoding message
+            
             return null;
         } catch (JWTVerificationException exception) {
             exception.printStackTrace();
-            //log Token Verification Failed
+
             return null;
         }
     }
