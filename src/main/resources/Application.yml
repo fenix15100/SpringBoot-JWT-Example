@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      database: springbootjwt
+      host: localhost
+      port: 27017
+      repositories:
+        enabled: true
